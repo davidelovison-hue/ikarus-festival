@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071422"/>
+      <stop offset="1" stop-color="#12304d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect x="0" y="0" width="10" height="500" fill="#3ec6ff"/>
+  <text x="48" y="92" fill="#3ec6ff" font-family="Inter, Arial, sans-serif" font-size="18" letter-spacing="3">IKARUS 2027</text>
+  <text x="48" y="160" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">DAY TICKET</text>
+  <text x="48" y="210" fill="#c9d7e8" font-family="Inter, Arial, sans-serif" font-size="22">One day</text><text x="48" y="246" fill="#c9d7e8" font-family="Inter, Arial, sans-serif" font-size="22">No re-entry</text>
+</svg>

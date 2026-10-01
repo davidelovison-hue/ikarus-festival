@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#071422"/>
+  <circle cx="980" cy="140" r="90" fill="#f2c14e" opacity="0.85"/>
+  <rect x="0" y="520" width="1200" height="280" fill="#0c1c2e"/>
+  <polygon points="80,520 220,300 360,520" fill="#16324c"/>
+  <polygon points="280,520 460,240 640,520" fill="#1c4060"/>
+  <polygon points="560,520 760,280 960,520" fill="#12283c"/>
+  <text x="72" y="640" fill="#3ec6ff" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="4">IKARUS FESTIVAL</text>
+  <text x="72" y="710" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="700">DARE TO FLY</text>
+  <text x="72" y="758" fill="#c9d7e8" font-family="Inter, Arial, sans-serif" font-size="24">25-27 June 2027  ·  Memmingen</text>
+</svg>
