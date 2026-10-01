@@ -10,9 +10,9 @@ export type PlanCategory = {
 
 export const PLAN_CATEGORIES: PlanCategory[] = [
   { id: 'overview', title: 'Overview' },
-  { id: 'entry', title: 'Tickets' },
+  { id: 'entry', title: 'Entry pass' },
   { id: 'camping', title: 'Camping' },
-  { id: 'shuttle', title: 'Transportation' },
+  { id: 'shuttle', title: 'Transport' },
 ];
 
 /** Default plan tab (tickets). */
@@ -21,16 +21,16 @@ export const DEFAULT_PLAN_TAB = 'entry';
 const BASE = import.meta.env.BASE_URL;
 
 export const HERO_GRID_IMAGES = [
-  `${BASE}event-crowd.svg`,
-  `${BASE}event-stage.svg`,
-  `${BASE}event-airfield.svg`,
-  `${BASE}event-camp.svg`,
+  `${BASE}hero-crowd.jpg`,
+  `${BASE}hero-stage.jpg`,
+  `${BASE}hero-field.jpg`,
+  `${BASE}hero-camp.jpg`,
 ] as const;
 
 export const GALLERY_IMAGES = [
   {
-    src: `${BASE}event-poster.svg`,
-    alt: 'Ikarus Festival 2027 at the former military airfield, Memmingen',
+    src: `${BASE}hero-festival.jpg`,
+    alt: 'Open-air festival stage at sunset',
   },
   {
     src: HERO_GRID_IMAGES[0],
@@ -54,17 +54,17 @@ export const FESTIVAL_HERO_VIDEO = '';
 
 export const FESTIVAL_MEDIA_HERO = {
   video: FESTIVAL_HERO_VIDEO,
-  videoPoster: `${BASE}event-poster.svg`,
+  videoPoster: `${BASE}hero-festival.jpg`,
   grid: HERO_GRID_IMAGES,
 };
 
 export const GALLERY_IMAGE_URLS = GALLERY_IMAGES.map((image) => image.src);
 
-export const POSTER_IMAGE = `${BASE}event-poster.svg`;
+export const POSTER_IMAGE = `${BASE}hero-festival.jpg`;
 
 export const AVATAR_URL = `${BASE}event-logo.svg`;
 
-export const VENUE_IMAGE = `${BASE}event-airfield.svg`;
+export const VENUE_IMAGE = `${BASE}hero-field.jpg`;
 
 export const HERO_KICKER = 'Official ticketing platform';
 
@@ -80,29 +80,29 @@ export const LINEUP_HINT = 'Friday 25 to Sunday 27 June 2027';
 
 export const IMMERSIVE_EXPECT = [
   'Ikarus Festival returns for its 13th year, 25 to 27 June 2027, on the former military airfield at Allgäu Airport in Memmingen.',
-  'House, techno, hardstyle and more across eight stages. Full Weekend Phase 1 is €174.90. Dare to fly.',
+  'House, techno, hardstyle and more across eight stages. Full Weekend Phase 2 is €184.90. Phase 1 is sold out. Dare to fly.',
 ] as const;
 
 export const IMMERSIVE_HIGHLIGHT_CARDS = [
   {
     title: 'Dare to fly',
     text: 'Three days on the airfield at Memmingerberg. The date moved off the Pentecost weekend so the weather has a better chance.',
-    image: `${BASE}event-poster.svg`,
+    image: `${BASE}hero-festival.jpg`,
   },
   {
     title: 'Eight stages',
     text: 'Olymp, Minos Tent, Forest, Nox, Onos Shelter, Hade Cage and Medusa Jungle, plus one more stage still to be named on the timetable.',
-    image: `${BASE}event-stage.svg`,
+    image: `${BASE}hero-stage.jpg`,
   },
   {
     title: 'First names',
     text: 'BUNT. is back, and Tream is on the bill. The rest of the 150-plus artists will be announced.',
-    image: `${BASE}event-crowd.svg`,
+    image: `${BASE}hero-crowd.jpg`,
   },
   {
     title: 'Stay on site',
     text: 'Camping runs Friday 09:00 to Monday 15:00 with free hot showers for camping guests. A Full Weekend ticket is required.',
-    image: `${BASE}event-camp.svg`,
+    image: `${BASE}hero-camp.jpg`,
   },
 ] as const;
 
@@ -127,7 +127,7 @@ export const IMMERSIVE_DAY_STEPS = [
 export const IMMERSIVE_FAQS = [
   {
     q: 'Which tickets are on sale?',
-    a: 'Full Weekend Phase 1 is €174.90 and Full Weekend Premium Phase 1 is €249.90. Phase 2 is also on sale at €184.90 and €259.90. Day tickets are Friday €87.90, Saturday €94.90 and Sunday €87.90. Premium day tickets are Friday €154.90, Saturday €159.90 and Sunday €154.90. The Young Festival Pass (18-21), including camping, is €199.90.',
+    a: 'Full Weekend Phase 2 is €184.90. Full Weekend Phase 1 at €174.90 is sold out. Day tickets are Friday €87.90, Saturday €94.90 and Sunday €87.90, with a Premium option for each day. The Young Festival Pass (18-21), including camping, is €199.90.',
   },
   {
     q: 'What does a Full Weekend ticket cover?',
@@ -139,7 +139,7 @@ export const IMMERSIVE_FAQS = [
   },
   {
     q: 'How does camping work?',
-    a: 'The Camping Ticket is €59.90 and needs a Full Weekend ticket. Camping is open Friday 09:00 to Monday 15:00, with free hot showers and toilets. Car camping is €79.90 and a caravan or motorhome is €119.90. Those are for the vehicle only. Everyone still needs a Full Weekend ticket and a camping ticket. The power package is €129.90 and is only for a caravan or motorhome.',
+    a: 'The Camping Ticket is €59.90 and needs a Full Weekend ticket. A €15 waste deposit is charged. Camping is open Friday 09:00 to Monday 15:00, with free hot showers and toilets. Car camping is €79.90 and a motorhome or caravan is €119.90. Those are for the vehicle only. Everyone still needs a camping ticket. The power package is €129.90 and is only for a motorhome or caravan.',
   },
   {
     q: 'Who can buy the Young Festival Pass?',
@@ -173,7 +173,7 @@ export const OVERVIEW_INFO = [
   {
     icon: '🎫',
     label: 'Tickets',
-    text: 'Full Weekend Phase 1 €174.90. Premium Phase 1 €249.90. Day tickets from €87.90.',
+    text: 'Full Weekend Phase 2 €184.90. Phase 1 is sold out. Day tickets from €87.90.',
   },
   {
     icon: '🎧',
@@ -190,9 +190,9 @@ export const FESTIVAL_CURRENCY = {
 export const FESTIVAL_COPY = {
   intro:
     'Ikarus Festival 2027 is the 13th edition, 25 to 27 June, on the former military airfield at Allgäu Airport in Memmingen. House, techno, hardstyle and the styles around them, on eight stages. The motto is Dare To Fly.',
-  introCta: 'Full Weekend Phase 1 is €174.90.',
+  introCta: 'Full Weekend Phase 2 is €184.90.',
   ticketTabs:
-    'Full Weekend Phase 1 €174.90. Premium Phase 1 €249.90. Friday €87.90, Saturday €94.90, Sunday €87.90. Young Festival Pass, including camping, €199.90.',
+    'Full Weekend Phase 2 €184.90. Phase 1 is sold out. Friday €87.90, Saturday €94.90, Sunday €87.90. Young Festival Pass, including camping, €199.90.',
   supportEmail: 'www.ikarus-festival.de',
   privacyUrl: 'https://www.ikarus-festival.de/',
   officialSiteUrl: 'https://www.ikarus-festival.de/',

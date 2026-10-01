@@ -16,9 +16,9 @@ function artist(id: string, name: string, image: string): FestivalArtist {
   return { id, name, image, fallbackImage: LINEUP_FALLBACK_IMAGE };
 }
 
-/** Announced names only. The rest of the bill is still TBA. */
+/** Official 2027 lineup posters. The rest of the bill is still TBA. */
 export const FESTIVAL_ARTISTS: FestivalArtist[] = [
-  artist('bunt', 'BUNT.', `${BASE}artist-bunt.svg`),
-  artist('tream', 'Tream', `${BASE}artist-tream.svg`),
-  artist('more', 'More TBA', `${BASE}artist-tba.svg`),
+  artist('bunt', 'BUNT.', `${BASE}artist-bunt.jpg`),
+  artist('tream', 'Tream', `${BASE}artist-tream.jpg`),
+  artist('more', 'More TBA', `${BASE}hero-stage.jpg`),
 ];

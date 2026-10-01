@@ -95,7 +95,7 @@ export function ConnectPage() {
           { label: `${eventTitle} - General access`, href: planPath('entry') },
           { label: `${eventTitle} - VIP area`, href: planPath('entry') },
           { label: `${eventTitle} - Camping`, href: planPath('camping') },
-          { label: `${eventTitle} - Transportation`, href: planPath('shuttle') },
+          { label: `${eventTitle} - Transport`, href: planPath('shuttle') },
         ],
       },
       {

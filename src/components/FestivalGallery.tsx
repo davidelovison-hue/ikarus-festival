@@ -6,7 +6,7 @@ import {
   HERO_FACTS,
   HERO_KICKER,
 } from '../data/festivalConfig';
-import { findEntity } from '../data/planCatalog';
+import { ENTRY_TICKET_IDS, findEntity } from '../data/planCatalog';
 import { FESTIVAL_EVENT } from '../lib/festivalEvent';
 import { formatPrice } from '../lib/formatPrice';
 import {
@@ -56,7 +56,13 @@ export function FestivalGallery({ onBuyTickets }: FestivalGalleryProps) {
     () => buildGalleryItems(GALLERY_IMAGE_URLS, config.video, config.videoPoster),
     [config.video, config.videoPoster],
   );
-  const fromPrice = formatPrice(findEntity('ticket-standard')?.price ?? 790);
+  const fromPrice = formatPrice(
+    Math.min(
+      ...ENTRY_TICKET_IDS.map((id) => findEntity(id))
+        .filter((entity) => entity && entity.listingTag !== 'SOLD OUT')
+        .map((entity) => entity!.price),
+    ),
+  );
 
   const canOpenGallery = galleryItems.length > 0;
 
